@@ -13,10 +13,36 @@ body {
     color: var(--text);
 }
 
+/*Centrado vertical con espacio mejorado */
 .header {
     background: var(--card);
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espacio entre el logo y el texto */
+}
+
+/* Logo con efecto neón para eliminar bordes*/
+.header-logo {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: transparent;
+    /* Sombras neón: la primera difumina el borde y la segunda da profundidad */
+    box-shadow: 
+        0 0 12px rgba(56, 189, 248, 0.5), 
+        0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+/* Ajuste para que el icono de huellas y el texto no estén pegados */
+.header h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .container {
@@ -81,4 +107,3 @@ th {
     border-radius: 5px;
     display: none;
 }
-
