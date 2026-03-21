@@ -1,0 +1,83 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --primary: #38bdf8;
+    --text: #e2e8f0;
+    --danger: #ef4444;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.header {
+    background: var(--card);
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.form-section {
+    background: var(--card);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: var(--primary);
+    cursor: pointer;
+    color: black;
+}
+
+.actions {
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #334155;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: white;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}

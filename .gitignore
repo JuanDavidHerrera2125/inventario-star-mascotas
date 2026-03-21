@@ -1,0 +1,14 @@
+# Dependencias de Node (Front-end)
+node_modules/
+dist/
+build/
+
+# Compilados de Java e IntelliJ (Back-end)
+target/
+*.class
+.idea/
+*.iml
+
+# Archivos de sistema y logs
+.DS_Store
+*.log

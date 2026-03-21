@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Mascotas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🐾 Star Mascotas</h1>
+</header>
+
+<main class="container">
+
+    <!-- FORMULARIO -->
+    <section class="form-section">
+        <h2>Agregar Producto</h2>
+        <form id="productForm">
+            <input type="text" id="name" placeholder="Nombre" required>
+            
+            <select id="category" required>
+                <option value="">Categoría</option>
+                <option value="Food">Alimento</option>
+                <option value="Toys">Juguetes</option>
+                <option value="Accessories">Accesorios</option>
+            </select>
+
+            <input type="number" id="price" placeholder="Precio" required>
+            <input type="number" id="stock" placeholder="Stock" required>
+
+            <button type="submit">Agregar</button>
+        </form>
+    </section>
+
+    <!-- BOTÓN EXPORT -->
+    <div class="actions">
+        <button id="exportBtn">Exportar a CSV</button>
+    </div>
+
+    <!-- TABLA -->
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="productTable"></tbody>
+        </table>
+    </section>
+
+</main>
+
+<div id="notification" class="notification"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
